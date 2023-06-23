@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+	height: 70px;
+}
+
+#header_right {
+	float: right;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	height: 60px;
+	position: relative;
+	top: 5px;
+}
+
+.info_wrap {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 200px;
+	height: 30px;
+}
+
+.info_wrap .loginLine {
+	border-right: 1px solid #b8b8b8;
+}
+
+.info_wrap a {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	color: #8d8c8c;
+	position: relative;
+	font-weight: 700;
+}
+
+.info_wrap a:hover {
+	color: #68A2DF;
+	font-weight: 700;
+}
+
+#header_left {
+	float: left;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	height: 60px;
+	position: relative;
+	top: 5px;
+}
+
+.logo {
+	margin: 0;
+	margin-left: 200px;
+	width: 200px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.search_wrap {
+	align-items: center;
+	display: inline-block;
+	position: relative;
+}
+
+.search_input {
+	position: relative;
+}
+
+.search_input input {
+	border: 1px solid #e5e5e5;
+	border-radius: 30px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	height: 50px;
+	padding: 0 74px 0 20px;
+	width: 420px;
+}
+
+.search_wrap {
+	align-items: center;
+	display: flex;
+	position: relative;
+}
+
+.search_input button {
+	align-items: center;
+	background-color: #68A2DF;
+	border-radius: 20px;
+	border-style: none;
+	display: flex;
+	font-size: 0;
+	height: 36px;
+	justify-items: center;
+	line-height: 0;
+	position: absolute;
+	right: 12px;
+	text-indent: -9999px;
+	top: 7px;
+	width: 36px;
+}
+
+.search_input button:hover {
+	cursor: pointer;
+	background-color: #639ad4;
+}
+
+.search_input button .ico {
+	background: url(../icon/icons8-수색.svg) no-repeat;
+	background-position: 50%;
+	height: 24px;
+	margin: 0 auto;
+	width: 24px;
+}
+.widthHr {
+    border: 1px solid #68A2DF;
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h1{
+	color: #68A2DF;
+	margin-left: 10%;
+	margin-top: 10px;
+	font-size: 2.5em;
+	display: flex;
+}
+
+#container{
+	margin-left: 10%;
+	display: flex;
+}
+#container>ul{
+	border-right: 1px solid #68A2DF;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 230px;
+}
+
+#container>ul>li>a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 17px;
+	transition: 0.3s;
+}
+
+#container>ul>li>a:focus {
+	color: #68A2DF;
+	border-bottom: 1px solid #68A2DF;
+	width: 80%;
+	text-shadow: 0px 0px 1rem #fff;
+}
+
+#contents{
+	margin-left: 30px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/review.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="re_container">
+        <div class="re_header">
+            <span>검색</span>
+            <input type="text" class="search">
+            <input type="button" class="search_btn" value="검색">
+            <input type="button" class="write_btn" value="리뷰작성">
+        </div>
+        <div class="masonry">
+            <!-- Masonry items 추가될 위치 -->
+        </div>
+        <button id="load-more">더보기</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            // Masonry 초기화
+            var $masonry = $('.masonry').masonry({
+                itemSelector: '.item',
+                columnWidth: '.item',
+                percentPosition: true
+            });
+
+            // 이미지 로드 완료 후 Masonry 레이아웃 수행
+            $masonry.imagesLoaded().progress(function() {
+                $masonry.masonry('layout');
+            });
+
+            // 추가하는 아이템을 생성하는 함수
+            function createItems() {
+                let items = [];
+                for (let i = 0; i < 10; i++) {
+                    let item = $(`
+                        <div class="item">
+                            <img src="https://via.placeholder.com/300.jpg" alt="300 * 300 size image">
+                            <div class="desc">
+                                <table>
+                                    <tr>
+                                        <td>작성자</td>
+                                    </tr>
+                                    <tr>
+                                        <td>제목</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    `);
+                    items.push(item);
+                }
+                return items;
+            }
+
+            // 아이템 추가하여 Masonry 레이아웃 적용하는 함수
+            function appendItems() {
+                let items = createItems();
+                $masonry.append(items).masonry('appended', items).imagesLoaded().progress(function() {
+                    $masonry.masonry('layout');
+                });
+            }
+
+            // 페이지 로드 시 처음 10개 아이템 추가
+            appendItems();
+
+            // 더보기 버튼 클릭 시 10개씩 아이템 추가
+            $('#load-more').on('click', function() {
+                appendItems();
+            });
+        });
+    </script>
+</body>
+</html>

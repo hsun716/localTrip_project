@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #f0f0f0;
+}
+
+.main {
+	min-height: 100vh;
+	padding: 40px 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	width: 500px;
+	margin: 0 auto;
+	min-height: calc(50vh - 80px);
+	position: relative;
+	top: 230px;
+}
+
+.form_wrap {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.logo_wrap h1 {
+	margin: 0px;
+	padding-bottom: 40px;
+	background-size: 100% 100%;
+	display: block;
+	font-size: 0;
+	height: 55px;
+	line-height: 0;
+	text-indent: 0px;
+	width: 200px;
+}
+
+.logo_wrap img {
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	color: #333;
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+
+.ipt_wrap {
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: flex;
+	height: 48px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	padding: 0 12px;
+}
+
+.ipt_box {
+	border: none;
+	flex: 1;
+	height: 100%;
+	padding: 0;
+	font-weight: 500;
+	font-size: 15px;
+	outline: none;
+}
+
+.login_btn input {
+	width: 100%;
+	height: 48px;
+	background-color: #68A2DF;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.login_btn input:hover {
+	background-color: #639ad4;
+}
+
+.rgt_link {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.rgt_link a {
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+	color: #525252;
+}

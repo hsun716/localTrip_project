@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+	height: 70px;
+}
+
+#header_left {
+	float: left;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	height: 60px;
+	position: relative;
+	top: 5px;
+}
+
+.logo {
+	margin: 0;
+	margin-left: 200px;
+	width: 200px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+h1 {
+	color: #68A2DF;
+	margin-left: 10%;
+	margin-top: 10px;
+	font-size: 2.5em;
+	display: flex;
+}
+
+.widthHr {
+	border: 1px solid #68A2DF;
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#writeForm {
+	margin: 0 auto;
+	width: 700px;
+}
+
+label {
+	color: #333;
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+
+.ipt_wrap {
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: flex;
+	height: 48px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 0 12px;
+}
+
+.ipt_box {
+	border: none;
+	flex: 1;
+	height: 100%;
+	padding: 0;
+	font-weight: 500;
+	font-size: 16px;
+	outline: none;
+}
+
+input[type=file] {
+	display: none;
+}
+
+.file_wrap {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.file_btn {
+	margin: 0px;
+	width: 60px;
+	background-color: #68A2DF;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0 15px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.file-list {
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	height: 75px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.file_wrap .file-list .filebox p {
+	font-size: 16px;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+.file_wrap .file-list .filebox .delete img {
+	margin-left: 5px;
+}
+
+.file_wrap .file-list .filebox .delete img:hover {
+	cursor: pointer;
+}
+
+.txa_wrap {
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 0 12px;
+}
+
+.txa_wrap>textarea {
+	border: none;
+	outline: none;
+	width: 100%;
+	resize: none;
+	overflow-y: hidden;
+	line-height: 2;
+	padding: 10px 0;
+}
+
+.writeForm_btn {
+	display: flex;
+	justify-content: right;
+}
+
+.writeForm_btn>input {
+	background-color: #68A2DF;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 4px 12px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.writeForm_btn>input[type=reset] {
+	margin-left: 5px;
+}
+
+.btn:hover{
+	background-color: #639ad4;
+}
